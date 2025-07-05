@@ -4,6 +4,8 @@ import yfinance as yf
 import plotly.graph_objects as go
 import pandas as pd
 import re
+from fastapi import FastAPI
+import uvicorn
 # ---------- PAGE CONFIG ----------
 st.set_page_config(page_title="📈 Stock Advisor AI", layout="centered")
 
@@ -145,3 +147,6 @@ if analyze_clicked and symbol:
         """
         st.markdown(fund_html, unsafe_allow_html=True)
 
+app=FastAPI
+if __name__ == "__main__":
+    uvicorn.run(app, host="0.0.0.0", port=10000)

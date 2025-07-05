@@ -146,7 +146,3 @@ if analyze_clicked and symbol:
         </table>
         """
         st.markdown(fund_html, unsafe_allow_html=True)
-
-app=FastAPI
-if __name__ == "__main__":
-    uvicorn.run(app, host="0.0.0.0", port=10000)

@@ -1,0 +1,13 @@
+fastapi
+uvicorn
+streamlit
+yfinance
+pandas
+numpy
+openai
+python-dotenv
+requests
+ta
+plotly
+requests
+streamlit-autorefresh

@@ -48,7 +48,7 @@ if analyze_clicked and symbol:
 
     with st.spinner("Analyzing stock using AI..."):
         try:
-            response = requests.post("http://localhost:8000/analyze", json={"symbol": selected_symbol})
+            response = requests.post("https://stockapps-t3xc.onrender.com/analyze", json={"symbol": selected_symbol})
             result = response.json()
         except Exception as e:
             st.error(f"❌ Failed to connect to backend: {e}")
